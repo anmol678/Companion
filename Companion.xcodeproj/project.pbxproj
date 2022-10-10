@@ -18,6 +18,9 @@
 		79E1277828F3B68F00E4DC14 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1277728F3B68F00E4DC14 /* DataStore.swift */; };
 		79E1277B28F3B78A00E4DC14 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1277A28F3B78A00E4DC14 /* HealthKit.framework */; };
 		79E1277D28F3B92100E4DC14 /* HealthKitSetupAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1277C28F3B92100E4DC14 /* HealthKitSetupAssistant.swift */; };
+		79E1278028F3E98000E4DC14 /* calihousing.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 79E1277F28F3E98000E4DC14 /* calihousing.mlmodel */; };
+		79E1278228F3EBF000E4DC14 /* PredictorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1278128F3EBF000E4DC14 /* PredictorView.swift */; };
+		79E1278428F3EC4D00E4DC14 /* HealthKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E1278328F3EC4D00E4DC14 /* HealthKitView.swift */; };
 		901C0F5FE8B04C715F3508C3 /* Pods_Companion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51FC167E5B6F464EFC8A0C4A /* Pods_Companion.framework */; };
 		FC4DEA5A8F9B53FE1B5C3ACB /* Pods_CompanionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED3E5E72D3152254F22E09 /* Pods_CompanionTests.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +65,9 @@
 		79E1277A28F3B78A00E4DC14 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		79E1277C28F3B92100E4DC14 /* HealthKitSetupAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitSetupAssistant.swift; sourceTree = "<group>"; };
 		79E1277E28F3BCB800E4DC14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		79E1277F28F3E98000E4DC14 /* calihousing.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = calihousing.mlmodel; path = ../../../calihousing.mlmodel; sourceTree = "<group>"; };
+		79E1278128F3EBF000E4DC14 /* PredictorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictorView.swift; sourceTree = "<group>"; };
+		79E1278328F3EC4D00E4DC14 /* HealthKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitView.swift; sourceTree = "<group>"; };
 		9A2F634595B77D9543DF94AE /* Pods-CompanionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CompanionTests.debug.xcconfig"; path = "Target Support Files/Pods-CompanionTests/Pods-CompanionTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A469B5A7F1ABB6C33B080F6E /* Pods-Companion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Companion.debug.xcconfig"; path = "Target Support Files/Pods-Companion/Pods-Companion.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +139,7 @@
 			children = (
 				79E1277E28F3BCB800E4DC14 /* Info.plist */,
 				79E1277928F3B78A00E4DC14 /* Companion.entitlements */,
+				79E1277F28F3E98000E4DC14 /* calihousing.mlmodel */,
 				79E1277628F3B67E00E4DC14 /* Views */,
 				79E1277528F3B67700E4DC14 /* ViewModels */,
 				79E1274B28F3B3D800E4DC14 /* CompanionApp.swift */,
@@ -180,6 +187,8 @@
 		79E1277628F3B67E00E4DC14 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				79E1278128F3EBF000E4DC14 /* PredictorView.swift */,
+				79E1278328F3EC4D00E4DC14 /* HealthKitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -400,8 +409,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E1274E28F3B3D800E4DC14 /* ContentView.swift in Sources */,
+				79E1278228F3EBF000E4DC14 /* PredictorView.swift in Sources */,
 				79E1277D28F3B92100E4DC14 /* HealthKitSetupAssistant.swift in Sources */,
 				79E1277828F3B68F00E4DC14 /* DataStore.swift in Sources */,
+				79E1278028F3E98000E4DC14 /* calihousing.mlmodel in Sources */,
+				79E1278428F3EC4D00E4DC14 /* HealthKitView.swift in Sources */,
 				79E1274C28F3B3D800E4DC14 /* CompanionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
