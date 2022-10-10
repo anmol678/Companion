@@ -10,7 +10,7 @@ import HealthKit
 
 final class DataStore: ObservableObject {
     
-//    @Published var steps: Double?
+    @Published var steps: Double = 0.0
     
     func authorizeHealthKit() {
       
@@ -37,6 +37,7 @@ final class DataStore: ObservableObject {
     func printStepCount() {
         
         getStepCount { [self] stepCount in
+            self.steps = stepCount
             print(stepCount)
         }
     }

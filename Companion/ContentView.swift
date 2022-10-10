@@ -25,9 +25,11 @@ struct ContentView: View {
             
             Spacer()
             
-            Button("Print StepCount") {
+            Button("Print Today's Step Count") {
                 store.printStepCount()
             }
+            
+            Text("\(store.steps)")
             
             Spacer()
         }
